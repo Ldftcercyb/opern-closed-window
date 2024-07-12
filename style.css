@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    perspective: 1000px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/Без\ названия.jpg);
+}
+.akoshka{
+    transition: all infinite;
+    width: 50%;
+    height: 100vh;
+    background-color: gray;
+    animation:dzax 10s infinite;
+    transform-origin: left;
+
+}
+@keyframes dzax{
+    0%{
+    }
+    100%{
+        
+        transform: rotatey(100deg);
+
+    }
+}
+ .akoshkaaaa-2{
+    transition:  infinite all;
+    width: 50%;
+    height: 100vh;
+    transform-origin: right;
+    background-color:gray;
+    animation:ach 10s infinite;
+} 
+@keyframes ach{
+ 
+    10%{
+        transform: rotatey(-100deg);
+        background-image: url(./img/tree-736885_640.jpg)
+        ;background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
